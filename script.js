@@ -109,7 +109,7 @@ function amButton(audio) {
         audioText.innerHTML = "brown noise";
         break;
   }
-  pauseEverything();
+  //pauseEverything();
   playPause();
   if(playing === false && wasPlaying === false) {
       playPause();
