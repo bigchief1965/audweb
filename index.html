@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A way to make sure files have loaded before playing them"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ijustwantmp3loop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="loadbutton">Press to load tracks</button>
+    <p id="lodin">laodin</p>
+    <div>
+        <button id="pinkb" onclick="amButton(pink)">pink</button>
+        <button id="whiteb" onclick="amButton(brown)">white</button>
+        <button id="brownb" onclick="amButton(white)">brown</button>
+    </div>
+    <p id="audioText">pink noise</p>
+    <button onclick="playPause()">play/pause</button>
+    <div class="wrapper">
+        <section id="tracks">
+        <ul>
+            <li data-loading="true">
+                <a href="pink3ms.mp3" class="track">Pink</a>
+            </li>
+            <li data-loading="true">
+                <a href="white1ms.mp3" class="track">White</a>
+            </li>
+            <li data-loading="true">
+                <a href="brown6ms.mp3" class="track">Brown</a>
+            </li>
+        </ul>
+        </section>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
